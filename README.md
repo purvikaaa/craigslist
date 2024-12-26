@@ -1,4 +1,4 @@
-# craigslist
+
 # Welcome to our craigslist-redesign repo!
 
 In its existing design, Craigslist is a 90s themed website. User research shows that this design makes users wary of using Craigslist, citing it as "unsafe" or "sketchy." 
