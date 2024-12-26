@@ -1,0 +1,116 @@
+
+/* log in page */
+/* some of this code comes from https://www.w3schools.com/howto/howto_css_signup_form.asp */
+* {
+  box-sizing: border-box;
+  font-family: 'fira code';
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Add padding to container elements */
+.signIn {
+  max-width: 676px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 4em 7em;
+  background-color: #E7EAEE;
+  border-radius: 8px;
+  
+}
+
+.socialIcon {
+  margin: 1em 1em 2em;
+}
+
+.signupbtn, .loginBtn {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: .5em;
+}
+/* TODO: Full-width input fields edit for colors*/
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: .5em;
+  margin: 0 0 .5em;
+  display: inline-block;
+  border: 1px solid #A0ABBB ;
+  border-radius: 4px;
+}
+::placeholder {
+  color: #A0ABBB;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+  outline: solid 2px blue;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: .5em 1em; 
+  color: white;
+  background:#4E1E86 ;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn:hover {
+    background: purple;
+}
+
+.btn > a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  width: 100%;
+}
+
+
+/* https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle */ 
+h3 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #A8A6A7; 
+  line-height: 0.1em;
+  margin: 0 0 1em; 
+  font-weight: 500;
+  
+} 
+
+.or {
+  margin: 2em;
+}
+
+
+/* change the color so that it blends with the background color*/
+h3 span { 
+  background:#E7EAEE; 
+  padding:0 10px; 
+}
+
+h4 {
+  font-weight: 400;
+  color:#A8A6A7 ;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
