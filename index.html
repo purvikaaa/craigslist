@@ -1,0 +1,383 @@
+  <!-- images from unsplash.com -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="docs/flickity.css" media="screen">
+        <title>Craigslist Redesigned</title>
+        <!-- Hotjar Tracking Code for https://molinarodri.github.io/craigstlist-redesign/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2837883,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav id="nav">
+            <div class="topNav">
+                <a href="index.html" class="active brand"><img src="img/logo.svg"></a>
+                <div class="leftElements">
+                    <!-- for demo -->
+                    <a  class="loginLink" href="log-in.html"> 
+                        <button class="btn">+ listing</button>
+                    </a>
+                    <a href="log-in.html" class="loginLink"><p class="headerP">log-in/sign-up</p></a>
+                </div>
+            </div>
+            <div class="bottomNav">
+                <ul class="navMenu">
+                    <li class="menuItem"><a href="#for-sale">for sale</a></li>
+                    <li class="menuItem"><a href="#housing">housing</a></li>
+                    <li class="menuItem"><a href="#jobs">jobs</a></li>
+                    <li class="menuItem"><a href="#gigs">gigs</a></li>
+                    <li class="menuItem"><a href="#services">services</a></li>
+                    <li class="menuItem"><a href="#community">community</a></li>
+                    <li class="menuItem"><a href="#forum">discussion forums</a></li>
+                    <li class="menuItem"><a href="#footer">about us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero -->
+        <section class="hero-container">
+                <div class="hero-details">
+                    <div class="center-details">
+                        <h1 class="heroTitle">PORTLAND, OR</h1>
+                        <h3>what are you looking for?</h3>
+                        <div class="searchBar">
+                            <button class="searchBtn">All<img class="searchIcon" src="img/down-arrow.svg"></button>
+                            <input class="searchInput" type="text" placeholder="keywords">
+                            <button class="searchBtn"><img class="searchIcon" src="img/search-icon.svg"></button>
+                        </div>
+                    </div>
+                    <h3>popular searches:</h3>
+                    <span class="filterRow">
+                        <button class="filterButton">cars</button>
+                        <button class="filterButton">room for rent</button>
+                        <button class="filterButton">free stuff</button>
+                        <button class="filterButton">video games</button>
+                        <h4>explore more...</h4>
+                    </span>
+                </div>
+        </section>
+        <main>
+            <!-- Events Section -->
+            <section class="calendar-section">
+                <div class="calendar-details"> 
+                    <div class="left-details">
+                        <h2>event calender</h2>
+                        <img class="cal-placeholder" src="img/calender.png">
+                    </div>
+                    <div class="rightDetails">
+                        <h2>upcoming events:</h2>
+                        <!-- Flickity carasoul-->
+                        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                            <div class="carousel-cell">
+                                <img class="gallery-img" src="img/unsplash/concert.jpg" alt="concert">
+                            </div>
+                            <div class="carousel-cell">
+                                <img class="gallery-img" src="img/unsplash/thrifting.jpg" alt="thrifting">
+                            </div>
+                            <div class="carousel-cell">
+                                <img class="gallery-img" src="img/unsplash/concert.jpg" alt="concert">
+                            </div>
+                        </div>
+                        <h3 class="event-details" style="font-weight: 500;">event title</h3>
+                        <h3 class="event-subdetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- Categories -->
+            <div id="for-sale" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">for sale</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-general.png" alt="general" >
+                            <h3 class="card-title">general</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-electronics.jpg" alt="electronics" >
+                            <h3 class="card-title">electronics</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-automotive.jpg" alt="automotive" >
+                            <h3 class="card-title">automotive</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-entertainment.jpg" alt="entertainment" >
+                            <h3 class="card-title">entertainment</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-accessories.jpg" alt="accessories" >
+                            <h3 class="card-title">accessories</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-supplies.jpg" alt="household supplies" >
+                            <h3 class="card-title">household supplies</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forSale-heavyEquipment.jpg" alt="some car" >
+                            <h3 class="card-title">heavy equipment</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="housing" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">housing</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-housing.jpg" alt="housing image" >
+                            <h3 class="card-title">apt/housing</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-housingWanted.jpg" alt="housing wanted" >
+                            <h3 class="card-title">housing wanted</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-housingSwap.jpg" alt="housing swap" >
+                            <h3 class="card-title">housing swap</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-commercial.jpg" alt="office" >
+                            <h3 class="card-title">office/commercial</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-roomsWanted.jpg" alt="rooms wanted" >
+                            <h3 class="card-title">rooms wanted</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-parking.jpg" alt="parking or storage" >
+                            <h3 class="card-title">parking/storage</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-realEstate.jpg" alt="real estate" >
+                            <h3 class="card-title">real estate</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-rooms-shared.jpg" alt="rooms or shared" >
+                            <h3 class="card-title">rooms/shared</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-sublet-temporary.jpg" alt="sublet or temp" >
+                            <h3 class="card-title">sublet/temporary</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/housing-vacation-rentals.jpg" alt="vacation rentals" >
+                            <h3 class="card-title">vacation rentals</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="jobs" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">jobs</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-resumes.jpg" alt="resumes" >
+                            <h3 class="card-title">resumes</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-general.jpg" alt="general" >
+                            <h3 class="card-title">general</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-management.jpg" alt="business management" >
+                            <h3 class="card-title">business management</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-agencies.jpg" alt="agencies" >
+                            <h3 class="card-title">agencies</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-creative.jpg" alt="creative" >
+                            <h3 class="card-title">creative</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-tech.jpg" alt="tech" >
+                            <h3 class="card-title">technology</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-hospitality.jpg" alt="hospitality" >
+                            <h3 class="card-title">hospitality</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/jobs-fitness.jpg" alt="fitness and health" >
+                            <h3 class="card-title">fitness & health</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gigs" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">gigs</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-computer.jpg" alt="computer" >
+                            <h3 class="card-title">computer</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-creative.jpg" alt="creative" >
+                            <h3 class="card-title">creative</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-crew.jpg" alt="crew" >
+                            <h3 class="card-title">crew</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-domestic.jpg" alt="domestic gigs" >
+                            <h3 class="card-title">domestic</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-event.jpg" alt="event" >
+                            <h3 class="card-title">event</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-labor.jpg" alt="labor" >
+                            <h3 class="card-title">labor</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-talent.jpg" alt="talent" >
+                            <h3 class="card-title">talent</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/gigs-writing.jpg" alt="writing" >
+                            <h3 class="card-title">writing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">services</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-tech.jpg" alt="tech" >
+                            <h3 class="card-title">tech</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-health.jpg" alt="health & wellness" >
+                            <h3 class="card-title">health & wellness</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-household.jpg" alt="general household" >
+                            <h3 class="card-title">general household</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-professional.jpg" alt="professional" >
+                            <h3 class="card-title">professional</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-creative.jpg" alt="creative" >
+                            <h3 class="card-title">creative</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/services-animals.jpg" alt="animals" >
+                            <h3 class="card-title">animals</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="community" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">community</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/community-lost.jpg" alt="lost and found" >
+                            <h3 class="card-title">lost & found</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/community-hobbies.jpg" alt="hobbies" >
+                            <h3 class="card-title">hobbies</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/community-news.jpg" alt="news and politics" >
+                            <h3 class="card-title">news & politics</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/community-help.jpg" alt="help" >
+                            <h3 class="card-title">help</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/community-upcoming.jpg" alt="upcoming" >
+                            <h3 class="card-title">upcoming</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="forum" class="center-row">
+                <div class="row">
+                    <h3 class="row-title">discussion forums</h3>
+                    <div class="row-carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-general.jpg" alt="general" >
+                            <h3 class="card-title">general</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-relationship.jpg" alt="relationship" >
+                            <h3 class="card-title">relationship</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-arts.jpg" alt="arts and humanities" >
+                            <h3 class="card-title">arts & humanities</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-legal.jpg" alt="legal" >
+                            <h3 class="card-title">legal</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-diet.jpg" alt="diet" >
+                            <h3 class="card-title">diet</h3>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/unsplash/forum-tech.jpg" alt="tech" >
+                            <h3 class="card-title">tech</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#nav"><h3 class="to-nav" >back to the top ^</h3></a>
+        </main>
+                <!-- Footer -->
+        <footer id="footer">
+            <div class="footerContainer">
+                <img class="footerLogo" src="img/logo-footer.svg">
+                <div class="footerTextContainer">
+                    <h5 class="edit">help, faq, abuse, legal</h5 class="edit">
+                    <h5 class="edit">avoid scams & fraud</h5 class="edit">
+                    <h5 class="edit">personal safety tips</h5 class="edit">
+                </div>
+                <div class="footerTextContainer">
+                    <h5 class="edit">terms of use</h5 class="edit">
+                    <h5 class="edit">privacy policy</h5 class="edit">
+                    <h5 class="edit">system status</h5 class="edit">
+                    <h5 class="edit">about craigslist</h5 class="edit">
+                    <h5 class="edit">craigslist is hiring in sf</h5 class="edit">
+                    <h5 class="edit">craigslist open source</h5 class="edit">
+                </div>
+                <div class="footerTextContainer">
+                    <h5 class="edit">craigslist blog</h5 class="edit">
+                    <h5 class="edit">best-of-craigslist</h5 class="edit">
+                    <h5 class="edit">"craigslist joe"</h5 class="edit">
+                    <h5 class="edit">craig newmark philanthropies</h5 class="edit">
+                </div>
+                <div class="footerTextContainer">
+                    <h5 class="edit">download craigslist app:</h5 class="edit">
+                    <img class="footerApps" src="img/apps.svg">
+                </div>
+            </div> 
+        </footer>
+
+         <!-- flickity... -->
+        <script src="docs/flickity.pkgd.min.js"></script>
+    </body>
+</html>
